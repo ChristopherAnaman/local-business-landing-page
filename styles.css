@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+
+/* Hero Section */
+
+#home {
+    min-height: 500px;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #f5f5f5;
+}
+
+#home div {
+    width: 50%;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #f4b400;
+    color: #111;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#home img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* General Sections */
+
+section {
+    padding: 70px 8%;
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+/* Services */
+
+#services {
+    background-color: white;
+}
+
+#services > div {
+    display: flex;
+    gap: 25px;
+}
+
+#services > div > div {
+    flex: 1;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#services h3 {
+    margin-bottom: 15px;
+}
+
+
+/* How We Work */
+
+#how-we-work {
+    background-color: #f5f5f5;
+}
+
+#how-we-work > div {
+    display: flex;
+    gap: 25px;
+}
+
+#how-we-work > div > div {
+    flex: 1;
+    text-align: center;
+    padding: 25px;
+}
+
+#how-we-work h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Recent Work */
+
+#work > div {
+    display: flex;
+    gap: 25px;
+}
+
+#work > div > div {
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#work img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#work h3,
+#work p {
+    padding: 0 20px;
+}
+
+#work h3 {
+    margin-top: 20px;
+}
+
+#work p {
+    margin: 10px 0 20px;
+}
+
+
+/* Contact */
+
+#contact {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#contact > div {
+    margin: 25px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f4b400;
+    color: #111;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    #home div {
+        width: 100%;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    #services > div,
+    #how-we-work > div,
+    #work > div {
+        flex-direction: column;
+    }
+
+}
